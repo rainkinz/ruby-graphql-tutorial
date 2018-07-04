@@ -4,7 +4,7 @@ class Mutations::CreateLink < Mutations::BaseMutation
   argument :url, String, required: true
   argument :description, String, required: true
 
-  field :link, Types::Link, null: true
+  field :link, Types::LinkType, null: true
   field :errors, [String], null: false
 
   def resolve(url:, description:)
