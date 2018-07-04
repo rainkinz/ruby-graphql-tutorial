@@ -11,7 +11,7 @@ class Mutations::CreateLink < Mutations::BaseMutation
     link = Link.new(url: url, description: description)
     if link.save
       # Successful creation, return the created object with no errors
-      Rails.logger.warn("Saved link #{link.id}")
+      Rails.logger.warn("Saved link: '#{link.inspect}'")
       {
         link: link,
         errors: [],
