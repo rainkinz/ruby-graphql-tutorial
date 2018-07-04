@@ -36,7 +36,7 @@ gem 'jbuilder', '~> 2.5'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 
-gem 'graphql', '~> 1.8.4'
+gem 'graphql', '~> 1.8.4' #, path: '/Users/brendan/Projects/learning/graphql/graphql-ruby'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
