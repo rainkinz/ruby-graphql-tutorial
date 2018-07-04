@@ -1,2 +1,3 @@
-class Types::MutationType < Types::BaseObject
+class Types::MutationType < GraphQL::Schema::Object
+  field :create_link, Types::LinkType, mutation: Mutations::CreateLink
 end
